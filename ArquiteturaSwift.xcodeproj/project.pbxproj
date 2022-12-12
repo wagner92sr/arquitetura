@@ -18,6 +18,9 @@
 		1177A87C293AF6660047BC70 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1177A87B293AF6660047BC70 /* UserProvider.swift */; };
 		1177A87F293AF73A0047BC70 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1177A87E293AF73A0047BC70 /* UserModel.swift */; };
 		1177A884293AFDA30047BC70 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1177A883293AFDA30047BC70 /* Constants.swift */; };
+		118FCDEC29474CC5005BC62A /* ArquiteturaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FCDEB29474CC5005BC62A /* ArquiteturaSwiftTests.swift */; };
+		118FCDEF29474D09005BC62A /* ArquiteturaSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118FCDEE29474D09005BC62A /* ArquiteturaSwiftUITests.swift */; };
+		118FCDF1294752AF005BC62A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118FCDF0294752AF005BC62A /* GoogleService-Info.plist */; };
 		2048E161F1ADF1CF858303E5 /* Pods_ArquiteturaSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A22A49D6729E2A25586A9AB /* Pods_ArquiteturaSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		1177A87B293AF6660047BC70 /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
 		1177A87E293AF73A0047BC70 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1177A883293AFDA30047BC70 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		118FCDEB29474CC5005BC62A /* ArquiteturaSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArquiteturaSwiftTests.swift; sourceTree = "<group>"; };
+		118FCDEE29474D09005BC62A /* ArquiteturaSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArquiteturaSwiftUITests.swift; sourceTree = "<group>"; };
+		118FCDF0294752AF005BC62A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2A22A49D6729E2A25586A9AB /* Pods_ArquiteturaSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArquiteturaSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		737FD435129D7066E2F7071A /* Pods-ArquiteturaSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArquiteturaSwift.release.xcconfig"; path = "Target Support Files/Pods-ArquiteturaSwift/Pods-ArquiteturaSwift.release.xcconfig"; sourceTree = "<group>"; };
 		937076CD608596E6B468FA61 /* Pods-ArquiteturaSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArquiteturaSwift.debug.xcconfig"; path = "Target Support Files/Pods-ArquiteturaSwift/Pods-ArquiteturaSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +61,8 @@
 		1108719E293ACAC6004078CE = {
 			isa = PBXGroup;
 			children = (
+				118FCDED29474CE8005BC62A /* ArquiteturaSwiftUITests */,
+				118FCDEA29474CA0005BC62A /* ArquiteturaSwiftTests */,
 				110871A9293ACAC7004078CE /* ArquiteturaSwift */,
 				110871A8293ACAC7004078CE /* Products */,
 				D872ADD78AD42465200A6BB7 /* Pods */,
@@ -77,6 +85,7 @@
 				1177A87A293AF3E10047BC70 /* Source */,
 				1177A876293AF3930047BC70 /* API */,
 				110871B8293ACAC9004078CE /* Info.plist */,
+				118FCDF0294752AF005BC62A /* GoogleService-Info.plist */,
 			);
 			path = ArquiteturaSwift;
 			sourceTree = "<group>";
@@ -143,6 +152,22 @@
 				1177A883293AFDA30047BC70 /* Constants.swift */,
 			);
 			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		118FCDEA29474CA0005BC62A /* ArquiteturaSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				118FCDEB29474CC5005BC62A /* ArquiteturaSwiftTests.swift */,
+			);
+			path = ArquiteturaSwiftTests;
+			sourceTree = "<group>";
+		};
+		118FCDED29474CE8005BC62A /* ArquiteturaSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				118FCDEE29474D09005BC62A /* ArquiteturaSwiftUITests.swift */,
+			);
+			path = ArquiteturaSwiftUITests;
 			sourceTree = "<group>";
 		};
 		1B977454AE9328B6C449AE1D /* Frameworks */ = {
@@ -223,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				110871B7293ACAC9004078CE /* LaunchScreen.storyboard in Resources */,
+				118FCDF1294752AF005BC62A /* GoogleService-Info.plist in Resources */,
 				110871B4293ACAC9004078CE /* Assets.xcassets in Resources */,
 				110871B2293ACAC7004078CE /* Main.storyboard in Resources */,
 			);
@@ -281,10 +307,12 @@
 				110871AB293ACAC7004078CE /* AppDelegate.swift in Sources */,
 				110871AD293ACAC7004078CE /* SceneDelegate.swift in Sources */,
 				1177A87F293AF73A0047BC70 /* UserModel.swift in Sources */,
+				118FCDEC29474CC5005BC62A /* ArquiteturaSwiftTests.swift in Sources */,
 				1177A87C293AF6660047BC70 /* UserProvider.swift in Sources */,
 				1177A884293AFDA30047BC70 /* Constants.swift in Sources */,
 				1133016F293E4CFF004AA9CC /* UserManager.swift in Sources */,
 				11301171293E0A8900AB03A0 /* UserBusiness.swift in Sources */,
+				118FCDEF29474D09005BC62A /* ArquiteturaSwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
